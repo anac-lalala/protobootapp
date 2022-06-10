@@ -9,4 +9,8 @@ public class Calculadora {
     public Double cubo(Double numero) {
         return numero * numero * numero;
     }
+    
+    public Double diezX(Double numero) {
+        return numero * 10;
+    }
 }
