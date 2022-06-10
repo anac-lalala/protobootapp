@@ -43,4 +43,10 @@ public class ProtobootappApplication {
         this.calculadora = new Calculadora();
         return String.format("El cubo de %f es %f", numero, this.calculadora.cubo(numero));
     }
+    
+    @GetMapping("/diez")
+    public String diez(@RequestParam(value = "numero", defaultValue = "0") Double numero) {
+        this.calculadora = new Calculadora();
+        return String.format("Multicplica por 10 de %f es %f", numero, this.calculadora.diezX(numero));
+    }
 }
